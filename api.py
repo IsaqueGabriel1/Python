@@ -12,25 +12,25 @@ def home():
             num2 = request.form["num2"]
             
             if(request.form["opc"] == "soma"):
-                soma = int(num1) + int(num1)
+                soma = int(num1) + int(num2)
                 return {
                     "Resultado": str(soma)
                 }
 
             elif(request.form["opc"] == "subt"):
-                sub = int(num1) - int(num1)
+                sub = int(num1) - int(num2)
                 return {
                     "Resultado": str(sub)
                 }
 
             elif(request.form["opc"] == "mult"):
-                mult = int(num1) * int(num1)
+                mult = int(num1) * int(num2)
                 return {
                     "Resultado": str(mult)
                 }
 
             elif(request.form["opc"] == "divi"):
-                divi = int(num1) * int(num1)
+                divi = int(num1) // int(num2)
                 return {
                     "Resultado": str(divi)
                 }
